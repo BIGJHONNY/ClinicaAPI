@@ -11,7 +11,7 @@ public class Medico {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long idMeico;
+	private Long idMedico;
 	
 	@Column(length = 100,nullable = false)
 	private String nomeMedico;
@@ -20,24 +20,24 @@ public class Medico {
 	private String crm;
 	
 	@Column
-	private String telefoneMedio;
+	private String telefoneMedico;
 
 	public Medico() {
 	}
 
-	public Medico(Long idMeico, String nomeMedico, String crm, String telefoneMedio) {
-		this.idMeico = idMeico;
+	public Medico(Long idMedico, String nomeMedico, String crm, String telefoneMedico) {
+		this.idMedico = idMedico;
 		this.nomeMedico = nomeMedico;
 		this.crm = crm;
-		this.telefoneMedio = telefoneMedio;
+		this.telefoneMedico = telefoneMedico;
 	}
 
-	public Long getIdMeico() {
-		return idMeico;
+	public Long getIdMedico() {
+		return idMedico;
 	}
 
-	public void setIdMeico(Long idMeico) {
-		this.idMeico = idMeico;
+	public void setIdMedico(Long idMedico) {
+		this.idMedico = idMedico;
 	}
 
 	public String getNomeMedico() {
@@ -56,12 +56,12 @@ public class Medico {
 		this.crm = crm;
 	}
 
-	public String getTelefoneMedio() {
-		return telefoneMedio;
+	public String getTelefoneMedico() {
+		return telefoneMedico;
 	}
 
-	public void setTelefoneMedio(String telefoneMedio) {
-		this.telefoneMedio = telefoneMedio;
+	public void setTelefoneMedico(String telefoneMedico) {
+		this.telefoneMedico = telefoneMedico;
 	}
 	
 	
